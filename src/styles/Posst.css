@@ -1,0 +1,279 @@
+.posst {
+  background: #fff;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  margin-bottom: 24px;
+  width: 100%;
+}
+
+.posst_meta {
+  display: flex;
+  justify-content: space-between;
+  padding: 23px 40px 0 40px;
+  margin-bottom: 38px;
+}
+
+.meta {
+  position: relative;
+  width: 33.3%;
+  display: flex;
+  color: rgba(0, 0, 0, 0.8);
+}
+
+.meta p {
+  margin-left: 15px;
+  color: rgba(0, 0, 0, 0.54);
+}
+
+.meta a {
+  margin-left: 15px;
+  font-size: 14px;
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.8);
+  transition: .2s;
+}
+
+.meta a:hover  {
+  text-decoration: underline;
+}
+
+.meta img {
+  width: 40px;
+  height: 40px;
+}
+
+.posst_decor {
+  display: none;
+}
+
+.posst_head {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-decoration: none;
+}
+
+.posst_image {
+  margin: 0 40px;
+  height: 190px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+.posst_content {
+  margin: 24px 0;
+  padding: 0 40px;
+  display: flex;
+  flex-direction: column;
+  transition: .3s;
+}
+
+.posst_title {
+  font-size: 31px;
+  font-weight: bold;
+  line-height: 1.12;
+  color: rgba(0, 0, 0, .84);
+  margin-bottom: 8px;
+}
+
+.posst_content p {
+  font-size: 18px;
+  line-height: 1.58;
+  letter-spacing: -0.004em;
+  color: rgba(0, 0, 0, .81);
+}
+
+.posst_actions {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  padding: 0 40px 23px 40px;
+}
+
+.nc_actions {
+  align-self: flex-end;
+  margin-left: 10px;
+}
+
+.social {
+  align-self: baseline;
+  display: flex;
+  padding-left: 10px;
+}
+
+.sc_button {
+  width: 38px;
+  height: 38px;
+  background: #202124;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  border-radius: 2px;
+  margin-right: 15px;
+  display: flex;
+  justify-content: center;
+  transition: .2s;
+}
+
+.sc_button:hover {
+  background: #37474f;
+}
+
+.sc_button div {
+  align-self: center;
+  width: 25px;
+  height: 20px;
+  background-size: 100% 100%;
+  background-position: center;
+}
+
+.sc_button:nth-child(1) div {
+  height: 35px;
+}
+
+.ca {
+  align-self: baseline;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: flex-end;
+}
+
+.ca_button {
+  cursor: pointer;
+  font-size: 16px;
+  color: #fff;
+  padding: 5px 7px 5px 7px;
+  border-radius: 2px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 10px;
+  transition: .2s;
+  user-select: none;
+}
+
+.ca_button i {
+  font-size: 22px;
+  transition: .2s;
+}
+
+.ca_button:hover i {
+  transform: translateX(5px);
+}
+
+.ca_button p {
+  margin-left: 10px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.comments {
+  padding: 0 0 20px 20px;
+  margin-bottom: 0;
+}
+
+.comments h2 {
+  padding: 20px 0 30px 0;
+  font-size: 35px;
+  font-weight: 400;
+  line-height: 35px;
+  color: rgba(0, 0, 0, .83);
+  text-align: center;
+}
+
+.addcomment {
+  margin-left: 10%;
+  width: 80%;
+  margin-bottom: 50px;
+}
+
+.cp_image {
+  width: 50px;
+  height: 50px;
+  border-radius: 2px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+
+.ac {
+  display: flex;
+}
+
+.ac_holder {
+  margin-left: 15px;
+  width: 100%;
+}
+
+.ac_holder input {
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  padding: 7px 10px 3px 0;
+  width: 100%;
+  border: 0;
+  border-bottom: 2px solid rgba(0,0,0, .3);
+}
+
+.ac_holder input:focus {
+  outline: none;
+  border-bottom: 2px solid rgba(0,0,0, .8);
+}
+
+.ac_actions {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.ac_actions .ca_button {
+  margin-right: 0;
+}
+
+.del {
+  position: absolute;
+  top: 6px;
+  right: 0;
+}
+
+.buttondel {
+  cursor: pointer;
+  color: rgba(0, 0, 0, .7);
+  font-size: 16px;
+  padding: 4px 7px;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  margin-right: 10px;
+  transition: .2s;
+  user-select: none;
+}
+
+.buttondel i {
+  font-size: 20px
+}
+
+.buttondel:hover {
+  color: #fff;
+  background: rgb(229, 57, 53);
+  border-radius: 2px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+
+@media screen and (max-width: 1100px) {
+  .social {
+    width: 30%;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .meta {
+    width: 45%;
+  }
+  .meta:nth-child(2) {
+    width: 10%;
+  }
+  .posst_head {
+    flex-direction: column;
+  }
+  .del {
+    right: 194%;
+  }
+}

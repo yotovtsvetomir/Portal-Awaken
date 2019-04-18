@@ -1,0 +1,289 @@
+.header {
+  position: fixed;
+  left: 0;
+  right: 0;
+  z-index: 700;
+	will-change: transform;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
+  background: #202124;
+  height: 45px;
+}
+
+.logo {
+  width: 35px;
+  height: 35px;
+  background-repeat: no-repeat;
+  background-size: 80% 100%;
+  background-position: center;
+  align-self: center;
+}
+
+.header_container {
+  position: relative;
+  height: 45px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header_title {
+  display: block;
+  text-decoration: none;
+  color: #fff;
+  font-size: 23px;
+  font-weight: 400;
+  align-self: center;
+  padding-top: 5px;
+}
+
+.header_title2 {
+  display: block;
+  text-decoration: none;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 400;
+  align-self: center;
+}
+
+.nav2 {
+	display: none;
+  position: absolute;
+  top: 45px;
+  left: 0;
+  background: #202124;
+  width: 100%;
+}
+
+.nav2 ul {
+  height: 100%;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+}
+
+.nav2 a {
+  display: block;
+  text-decoration: none;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 400;
+  padding: 22px 30px;
+  transition: .3s linear;
+  border-top: 1px solid #fff;
+}
+
+.container {
+  display: none;
+  cursor: pointer;
+  margin-right: 20px;
+  align-self: center;
+}
+
+.bar1, .bar2, .bar3 {
+  width: 35px;
+  height: 3px;
+  background-color: #fff;
+  margin: 6px 0;
+  transition: 0.4s;
+}
+
+.change .bar1 {
+  -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+  transform: rotate(-45deg) translate(-6px, 4px);
+}
+
+.change .bar2 {
+  opacity: 0;
+}
+
+.change .bar3 {
+  -webkit-transform: rotate(45deg) translate(-8px, -8px);
+  transform: rotate(45deg) translate(-11px, -10px);
+}
+
+.nav ul {
+  height: 100%;
+  list-style: none;
+  display: flex;
+}
+
+.nav a {
+  display: block;
+  text-decoration: none;
+  color: #fff;
+  font-size: 15px;
+  font-weight: 400;
+  padding: 13px 20px 12px 20px;
+  transition: .3s linear;
+}
+
+.nav a:hover {
+  background: #fff;
+  color: #202124;
+}
+
+.lognav {
+  display: flex;
+  z-index: 20;
+}
+
+.sign {
+  text-decoration: none;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 400;
+  padding: 12px 20px 13px 20px;
+  transition: .3s linear;
+}
+
+.sign:hover {
+  background: #fff;
+  color: #202124;
+}
+
+.awa_signed {
+	display: none;
+	padding: 0px 10px 0px 10px;
+	text-decoration: none;
+  color: #fff;
+  transition: .3s linear;
+  position: relative;
+  user-select: none;
+}
+
+.notif {
+  background: #e53935;
+  width: 19px;
+  height: 19px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  top: 9px;
+  right: 15px;
+  padding-right: 1px;
+  font-weight: bold;
+}
+
+.prof_img {
+  margin-top: 5px;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+}
+
+.awa_signed:hover {
+  background: #fff;
+}
+
+.awa_profile_head {
+  background: #37474f;
+  padding: 17px 25px;
+  display: flex;
+  align-items: center;
+}
+
+.awa_profile_head h3 {
+  font-size: 20px;
+  margin-bottom: 5px;
+  text-transform: capitalize;
+  text-align: center;
+}
+
+.awa_profile_head p {
+  font-size: 14px;
+  text-align: center;
+}
+
+.awa_profile_img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 20px;
+}
+
+.awa_profile_body {
+  display: flex;
+  flex-direction: column;
+}
+
+.awa_profile_body a {
+  padding: 15px 0;
+  display: flex;
+  align-items: center;
+  transition: .3s;
+  text-decoration: none;
+  color: #fff;
+  position: relative;
+}
+
+.awa_profile_body p {
+  font-size: 18px;
+  margin-left: 20px;
+}
+
+.awa_profile_body i {
+  margin-left: 25px;
+}
+
+.awa_profile_body a:hover {
+  background: #fff;
+  color: #202124;
+}
+
+.notifs {
+  background: #e53935;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  position: absolute;
+  top: 15px;
+  right: 40px;
+  text-align: center;
+  padding-left: .5px;
+  font-weight: bold;
+}
+
+.social {
+  display: flex;
+}
+
+.social_icon {
+  margin-left: 10px;
+}
+
+@media screen and (max-width: 1100px) {
+	.container {
+		display: inline-block;
+	}
+	.nav {
+		display: none;
+	}
+  .social {
+    display: none;
+  }
+  .awa_signed:hover {
+    background: #202124;
+  }
+  .header_title {
+    font-size: 27px;
+  }
+  .header_title2 {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 425px) {
+	.container {
+		display: inline-block;
+	}
+  .header_title {
+    font-size: 20px;
+  }
+	.nav {
+		display: none;
+	}
+  .lognav a {
+    font-size: 14px;
+  }
+}

@@ -1,0 +1,384 @@
+* {
+	box-sizing: border-box;
+}
+
+#app {
+	height: 100%;
+}
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+	font-family: 'Roboto', sans-serif;
+	font-display: swap;
+	font-size: 14px;
+  line-height: 20px;
+	text-rendering: optimizeLegibility;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.material-icons {
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;  /* Preferred icon size */
+  display: inline-block;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+
+  /* Support for all WebKit browsers. */
+  -webkit-font-smoothing: antialiased;
+  /* Support for Safari and Chrome. */
+  text-rendering: optimizeLegibility;
+
+  /* Support for Firefox. */
+  -moz-osx-font-smoothing: grayscale;
+
+  /* Support for IE. */
+  font-feature-settings: 'liga';
+}
+
+body {
+	background: rgba(255,255,255,1);
+}
+
+body::-webkit-scrollbar {
+    width: 15px;
+}
+
+body::-webkit-scrollbar-track {
+    background-color: #202124;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: #1e88e5;
+    outline: #1e88e5 solid 1px
+}
+
+a {
+	cursor: pointer;
+}
+
+.shell {
+	padding: 0 13%;
+}
+
+.material-icons {
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;  /* Preferred icon size */
+  display: inline-block;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+
+  /* Support for all WebKit browsers. */
+  -webkit-font-smoothing: antialiased;
+  /* Support for Safari and Chrome. */
+  text-rendering: optimizeLegibility;
+
+  /* Support for Firefox. */
+  -moz-osx-font-smoothing: grayscale;
+
+  /* Support for IE. */
+  font-feature-settings: 'liga';
+}
+
+.home_title {
+	font-size: 17px;
+	font-weight: 600;
+	line-height: 35px;
+	padding-top: 65px;
+	border-bottom: 1px solid rgba(0, 0, 0, .2);
+	text-transform: uppercase;
+	margin-bottom: 20px;
+	color: rgba(0, 0, 0, .84);
+	text-align: left;
+}
+
+.section_title {
+	font-size: 35px;
+	font-weight: 600;
+	line-height: 35px;
+	padding-top: 45px;
+	margin-bottom: 40px;
+	color: rgba(0, 0, 0, .83);
+	text-align: center;
+}
+
+.main {
+	display: flex;
+	justify-content: space-between;
+}
+
+.content {
+	width: 70%;
+}
+
+.sidebar {
+	width: 19%;
+}
+
+.awa_circle {
+	font-size: 40px;
+	color: #fff;
+	transition: .3s linear;
+}
+
+.awa_profile {
+	position: absolute;
+	width: 300px;
+	border-radius: 3px;
+	box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+	top: 45px;
+	right: 0px;
+	background: #202124;
+	color: #fff;
+	display: none;
+	flex-direction: column;
+	transition: .3s;
+	user-select: none;
+}
+
+@media screen and (max-width: 1100px) {
+  	.sidebar {
+			width: 24%;
+		}
+		.content {
+			width: 74%;
+		}
+}
+
+@media screen and (max-width: 800px) {
+		.awa_signed {
+			display: none;
+			padding: 5px;
+		}
+  	.sidebar {
+			display: none;
+			width: 0;
+		}
+		.content {
+			width: 100%;
+		}
+}
+
+.profile {
+  padding-top: 80px;
+}
+
+.profile_body {
+  display: flex;
+  align-items: flex-start;
+  padding-bottom: 20px;
+}
+
+.profile_content {
+  width: 80%;
+}
+
+@media screen and (max-width: 1023px) {
+		.profile_body {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+		}
+		.profile_content {
+			width: 100%;
+		}
+}
+
+.here {
+	padding-top: 200px;
+	font-size: 50px;
+	padding-left: 200px;
+}
+
+.notifications {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 10px;
+  width: 100%;
+}
+
+.conprof {
+  width: 24%;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  border-top: 1px solid rgba(0, 0, 0, .2);
+  border-radius: 3px;
+  margin-right: 12px;
+  margin-bottom: 10px;
+}
+
+.conprof:nth-child(4n) {
+  margin-right: 0;
+}
+
+.conlist {
+  display: flex;
+  flex-wrap: wrap;
+  padding-bottom: 20px;
+}
+
+.empt {
+	display: flex;
+	justify-content: center;
+	padding-bottom: 20px;
+}
+
+.empt p {
+	font-size: 20px;
+	color: rgba(0, 0, 0, .7);
+}
+
+.chatlist {
+	width: 100%;
+	height: 500px;
+	overflow: auto;
+	color: #fff;
+	border-radius: 3px;
+	box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+	padding: 10px;
+	border-top: 1px solid rgba(0, 0, 0, .2);
+
+}
+
+.chatlist::-webkit-scrollbar {
+    width: 7px;
+}
+
+.chatlist::-webkit-scrollbar-track {
+    background-color: #fff;
+}
+
+.chatlist::-webkit-scrollbar-thumb {
+    background-color: #1e88e5;
+    outline: #1e88e5 solid 1px
+}
+
+.chatlist_title {
+	font-size: 30px;
+	background: #43a047;
+	padding: 10px;
+	border-radius: 3px;
+	box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+	text-align: center;
+	margin-bottom: 10px;
+	user-select: none;
+}
+
+.chatprof {
+  width: 24%;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  border-top: 1px solid rgba(0, 0, 0, .2);
+  border-radius: 3px;
+  margin-right: 12px;
+  margin-bottom: 10px;
+}
+
+.chatz {
+	background: #43a047;
+}
+
+.chatz h3 {
+	color: #fff;
+}
+
+.chatz .hhh {
+	color: #fff;
+}
+
+.messages {
+  height: 350px;
+  overflow: auto;
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.messages::-webkit-scrollbar {
+    width: 7px;
+}
+
+.messages::-webkit-scrollbar-track {
+    background-color: #fff;
+}
+
+.messages::-webkit-scrollbar-thumb {
+    background-color: #1e88e5;
+    outline: #1e88e5 solid 1px
+}
+
+.partners {
+	display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.posts {
+	width: 79%;
+}
+
+@media screen and (max-width: 1100px) {
+	.shell {
+		padding: 0 4%;
+	}
+	.chatlist {
+		height: 100%;
+	}
+	.chatlist_title {
+		padding: 10px 0;
+	}
+	.messages {
+		height: 280px;
+	}
+}
+
+.blopss {
+	width: 28%;
+}
+
+@media screen and (max-width: 1100px) {
+	.blopss {
+		width: 23%;
+	}
+}
+
+@media screen and (max-width: 1023px) {
+	.blopss {
+		display: none;
+	}
+	.posts {
+		width: 100%;
+	}
+}
+
+@media screen and (max-width: 425px) {
+  .conprof {
+    width: 49%;
+  }
+}

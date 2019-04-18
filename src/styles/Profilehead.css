@@ -1,0 +1,119 @@
+.profile_head_holder {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.profile_smallimg {
+  object-fit: cover;
+  width: 200px;
+  height: 170px;
+  border-radius: 3px;
+  border: 3px solid #fff;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  margin-bottom: 15px;
+}
+
+.profile_headline {
+  background: #fff;
+  height: 100%;
+  padding: 10px 50px;
+  border-radius: 3px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  text-align: center;
+}
+
+.profile_headline h2 {
+  font-size: 35px;
+  line-height: 1.2;
+  margin-bottom: 5px;
+  color: rgba(0, 0, 0, .87);
+}
+
+.profile_headline h3 {
+  font-size: 23px;
+  line-height: 1.2;
+  color: rgba(0, 0, 0, .77);
+}
+
+.profile_bigimg {
+  position: relative;
+  width: 100%;
+  height: 300px;
+  border-radius: 3px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.profile_backimg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  object-fit: cover;
+}
+
+.profile_connections {
+  background: #fff;
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+  padding: 15px;
+  border-radius: 3px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  user-select: none;
+}
+
+.profile_connections p {
+  font-size: 20px;
+  color: rgba(0, 0, 0, .8);
+}
+
+.profile_requests {
+  background: #fff;
+  position: absolute;
+  right: 180px;
+  bottom: 10px;
+  padding: 15px;
+  border-radius: 3px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  transition: 2s;
+  user-select: none;
+}
+
+.profile_requests p {
+  font-size: 20px;
+  color: rgba(0, 0, 0, .8);
+  transition: 2s;
+}
+
+.profile_messages {
+  background: #fff;
+  position: absolute;
+  right: 320px;
+  bottom: 10px;
+  padding: 15px;
+  border-radius: 3px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  transition: 2s;
+  user-select: none;
+}
+
+.profile_messages p {
+  font-size: 20px;
+  color: rgba(0, 0, 0, .8);
+  transition: 2s;
+}
+
+@media screen and (max-width: 425px) {
+  .profile_connections {
+    display: none;
+  }
+  .profile_requests {
+    display: none;
+  }
+}

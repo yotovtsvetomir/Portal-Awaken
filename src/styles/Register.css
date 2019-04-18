@@ -1,0 +1,209 @@
+.register_wrapper {
+  padding-top: 84px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.register {
+  width: 470px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  background: #fff;
+  padding: 40px 40px 20px 40px;
+  margin-bottom: 20px;
+}
+
+.register_title {
+  font-size: 35px;
+  font-weight: 300;
+  line-height: 35px;
+  margin-bottom: 40px;
+  color: rgba(0, 0, 0, .87);
+  text-align: center;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.register input {
+  width: 100%;
+  margin-bottom: 15px;
+  padding: 17px 15px;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  border-radius: 4px;
+  border: 1px solid rgba(0, 0, 0, .2);
+}
+
+.register input:focus {
+  outline: none;
+  border-color: #1e88e5;
+  box-shadow: 0px 0px 0px 1px #1e88e5 inset;
+}
+
+.register input:focus + label {
+  left: 15px;
+  top: -10px;
+  font-size: 14px;
+  background: #fff;
+  border-radius: 3px;
+  color: #1976d2;
+}
+
+.register_button {
+  display: block;
+  width: 100%;
+  padding: 15px;
+  height: 53px;
+  text-align: center;
+  border-radius: 3px;
+  background: #1e88e5;
+  margin: 30px 0 10px 0;
+  border: 1px solid transparent;
+  user-select: none;
+}
+
+.register_button p {
+  font-size: 18px;
+  font-weight: 400;
+  color: #fff;
+  display: block;
+}
+
+.register_button:hover {
+  background: #1565c0;
+}
+
+.register_forget {
+  display: block;
+  width: 100%;
+  text-align: center;
+  padding: 15px;
+  color: #0069ff;
+  font-size: 18px;
+}
+
+.register_holder {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.register_holder label {
+  position: absolute;
+  top: 18px;
+  left: 13px;
+  font-size: 16px;
+  color: rgba(0, 0, 0, .8);
+  padding: 0 7px;
+  max-width: 80%;
+  transition: .2s;
+  pointer-events: none;
+}
+
+.register_check {
+  display: flex;
+  align-items: center;
+  margin-bottom: 7px;
+}
+
+.register_check i {
+  font-size: 25px;
+  margin-right: 7px;
+  color: #202124;
+  cursor: pointer;
+  user-select: none;
+}
+
+.register_check p {
+  font-size: 14px;
+  color: rgba(0, 0, 0, .7);
+}
+
+.register_check a {
+  color: #0069ff;
+}
+
+.login_google {
+  display: block;
+  cursor: pointer;
+  width: 100%;
+  padding: 15px;
+  font-size: 18px;
+  font-weight: 400;
+  text-align: center;
+  border-radius: 3px;
+  background: #fff;
+  border: 1px solid rgba(0, 0, 0, .2);
+  color: rgba(0, 0, 0, .8);
+  margin-bottom: 10px;
+  position: relative;
+}
+
+.login_google:hover {
+  background: #e0e0e0;
+}
+
+.logo {
+  width: 30px;
+  height: 30px;
+  background-size: cover;
+  position: absolute;
+  left: 15px;
+  top: 10px;
+}
+
+.lds_ellipsis {
+  display: none;
+  position: relative;
+  width: 64px;
+  height: 15px;
+}
+.lds_ellipsis div {
+  position: absolute;
+  top: 5px;
+  width: 11px;
+  height: 11px;
+  border-radius: 50%;
+  background: #fff;
+  animation-timing-function: cubic-bezier(0, 1, 1, 0);
+}
+.lds_ellipsis div:nth-child(1) {
+  left: 6px;
+  animation: lds-ellipsis1 0.6s infinite;
+}
+.lds_ellipsis div:nth-child(2) {
+  left: 6px;
+  animation: lds-ellipsis2 0.6s infinite;
+}
+.lds_ellipsis div:nth-child(3) {
+  left: 26px;
+  animation: lds-ellipsis2 0.6s infinite;
+}
+.lds_ellipsis div:nth-child(4) {
+  left: 45px;
+  animation: lds-ellipsis3 0.6s infinite;
+}
+@keyframes lds-ellipsis1 {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@keyframes lds-ellipsis3 {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(0);
+  }
+}
+@keyframes lds-ellipsis2 {
+  0% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(19px, 0);
+  }
+}

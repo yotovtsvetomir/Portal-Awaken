@@ -1,0 +1,13 @@
+{
+  "name": "All Awaken Portal",
+  "short_name": "All Awaken Portal",
+  "start_url": "/",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#FAFAFA",
+  "icons": [{
+    "src": "https://res.cloudinary.com/awaken/image/upload/v1549556273/portal/192.png",
+    "sizes": "192x192",
+    "type": "image/png"
+  }]
+}
